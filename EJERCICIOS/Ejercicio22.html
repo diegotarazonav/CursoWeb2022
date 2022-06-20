@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        //Ingrese el monto a pagar por la compra de varios productos. A dicho monto ingresado deberá agregarle el Impuesto General a las Ventas (I.G.V.). En caso de que el monto a pagar –incluido I.G.V.- sea mayor a S/. 500.00 nuevos soles, no se aplicará un descuento de 8 % sino de 2 %. 
+        //¿cuantas variables necesito?
+        //7
+        //¿que tipos de datos necesito?
+        //real,entero,texto
+        //¿como se llamarian las variables?
+        //  pren,can,sbt,des,tip,igv,tot
+        //¿que valores voy a leer?
+        //pre,can,tip
+        //¿cual seria la operacion?
+        //sbt=pre*can
+        //des=sbt*0.08 -- des=sbt*0.02;
+        //igv=sbt*0.18;
+        //tot=sbt-des+igv;
+
+        //definiendo valores
+        var pre=0, can=0, sbt=0, des=0, tip="", igv=0, tot=0;
+        
+        //capturando valores
+        pre=parseFloat(prompt("Ingrese el precio:"));
+        can=parseInt(prompt("Ingresa la cantidad:"));
+        tip=prompt("Ingresa [f]Factura o [b]Boleta");
+        
+        //realizando operaciones
+        sbt=pre*can
+        if(sbt>500){
+        des=sbt*0.02;
+        }else{
+        des=sbt*0.08;
+        }
+        if(tip=="f"){
+        igv=sbt*0.18;
+        }else{
+        igv=0;
+        }
+        tot=sbt-des+igv;
+        
+        //mostrando resultados
+        document.write("El subtotal es: "+sbt+"<br>");
+        document.write("El descuento es: "+des+"<br>");
+        document.write("El igv es: "+igv+"<br>");
+        document.write("El total es: "+tot+"<br>");
+        document.write("<hr>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

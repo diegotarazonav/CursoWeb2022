@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+    <script type="text/javascript">
+        //Ingrese el nombre de un Docente y el número de hijos, visualice la palabra “NO HEREDEROS” cuando se cumpla la condición. 
+        //¿Cuantas variables necesito?
+        //2
+        //¿Que tipo de datos necesito?
+        //real, entero
+        //¿Como se llamarian las variables
+        //hij, men
+        //¿Que valores voy a leer?
+        //hij
+        //¿Cual seria la operacion?
+        //
+
+        var hij=0, men="";
+        
+        hij=parseInt(prompt("Ingresa el número de hijos del docente"));
+        
+        if(hij==0)
+            if(hij>=0){
+            men="NO TIENE HEREDEROS";
+            }
+            if(hij>1){
+            men="SI TIENE HEREDEROS";
+            }
+
+        document.write("El numero de hijos es: "+hij+"<br>")
+        document.write("El docente: "+men+"<br>");
+        document.write("<hr>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
